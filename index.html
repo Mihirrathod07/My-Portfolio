@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mihir Rathod | Cybersecurity</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <canvas id="matrix-bg"></canvas>
+  <div class="scroll-line" id="scrollLine"></div>
+
+  <!-- ═══════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════ -->
+  <nav>
+    <div class="nav-logo">MR<span>_</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#certifications">certs</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <div class="nav-status">
+      <div class="status-dot"></div>SYSTEM ONLINE
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════════ -->
+    <section id="hero">
+
+      <!-- LEFT: original content unchanged -->
+      <div class="hero-left">
+        <div class="hero-tag">Cybersecurity Researcher &amp; M.Tech Student</div>
+        <h1 class="hero-name">
+          <span class="glitch" data-text="MIHIR">MIHIR</span><br />
+          <span class="glitch" data-text="RATHOD" style="animation-delay:0.3s">RATHOD</span>
+        </h1>
+        <p class="hero-subtitle">&gt;&nbsp;<span id="typed"></span><span class="typed-cursor">_</span></p>
+        <p class="hero-desc">
+          Passionate cybersecurity enthusiast specializing in ethical hacking, threat analysis,
+          and OSINT. Currently pursuing M.Tech in Cyber Security at Indus University.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="https://github.com/Mihirrathod07" target="_blank" class="btn btn-secondary">GitHub &rarr;</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><span class="stat-num">3</span><span class="stat-label">Projects</span></div>
+          <div class="stat-item"><span class="stat-num">4</span><span class="stat-label">Certifications</span></div>
+          <div class="stat-item"><span class="stat-num">10+</span><span class="stat-label">Tools Mastered</span></div>
+          <div class="stat-item"><span class="stat-num">&#8734;</span><span class="stat-label">Curiosity</span></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: animated terminal panel (new addition) -->
+      <div class="hero-right">
+        <div class="hero-terminal-wrap">
+          <div class="terminal-box">
+            <div class="terminal-bar">
+              <div class="t-dot t-r"></div>
+              <div class="t-dot t-y"></div>
+              <div class="t-dot t-g"></div>
+              <span class="t-title">mihir@kali:~$ live_recon.sh</span>
+              <span class="hero-live-dot">&#9679; LIVE</span>
+            </div>
+            <div class="terminal-body" id="heroTermBody">
+              <!-- JS will inject animated lines here -->
+            </div>
+          </div>
+          <!-- floating skill tags around terminal -->
+          <span class="htag htag-1">OSINT</span>
+          <span class="htag htag-2">Kali Linux</span>
+          <span class="htag htag-3">Pen Testing</span>
+          <span class="htag htag-4">SOC Analyst</span>
+          <span class="htag htag-5">CTF</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         ABOUT SECTION
+    ═══════════════════════════════════════ -->
+    <section id="about">
+      <div class="section-header fade-up">
+        <div class="section-tag">01 // About</div>
+        <h2 class="section-title">Who Am <span>I</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+
+        <!-- Terminal Card -->
+        <div class="terminal-box fade-up">
+          <div class="terminal-bar">
+            <div class="t-dot t-r"></div>
+            <div class="t-dot t-y"></div>
+            <div class="t-dot t-g"></div>
+            <span class="t-title">mihir@kali:~$ whoami</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">&nbsp;cat profile.json</span></div>
+            <div class="t-out">{</div>
+            <div class="t-out">&nbsp;&nbsp;"name": <span class="t-val">"Mihir Rathod"</span>,</div>
+            <div class="t-out">&nbsp;&nbsp;"role": <span class="t-val">"Cybersecurity Researcher"</span>,</div>
+            <div class="t-out">&nbsp;&nbsp;"degree": <span class="t-val">"M.Tech Cyber Security"</span>,</div>
+            <div class="t-out">&nbsp;&nbsp;"university": <span class="t-val">"Indus University"</span>,</div>
+            <div class="t-out">&nbsp;&nbsp;"prev_degree": <span class="t-val">"B.Tech IT"</span>,</div>
+            <div class="t-out">&nbsp;&nbsp;"email": <span class="t-val">"mihir8716@gmail.com"</span>,</div>
+            <div class="t-out">&nbsp;&nbsp;"focus": [</div>
+            <div class="t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"Ethical Hacking"</span>,</div>
+            <div class="t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"OSINT"</span>,</div>
+            <div class="t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"Penetration Testing"</span>,</div>
+            <div class="t-out">&nbsp;&nbsp;&nbsp;&nbsp;<span class="t-val">"SOC Analyst"</span></div>
+            <div class="t-out">&nbsp;&nbsp;],</div>
+            <div class="t-out">&nbsp;&nbsp;"status": <span class="t-val">"Available for opportunities"</span></div>
+            <div class="t-out">}</div>
+            <div class="t-line" style="margin-top:0.5rem"><span class="t-prompt">$</span><span class="typed-cursor">_</span></div>
+          </div>
+        </div>
+
+        <!-- About Text -->
+        <div class="about-text fade-up" style="transition-delay:0.2s">
+          <h3>// Background</h3>
+          <p>
+            I'm a cybersecurity enthusiast with a B.Tech in Information Technology and currently
+            pursuing M.Tech in Cyber Security at Indus University. My journey started with a deep
+            curiosity for how systems work — and how they can be broken.
+          </p>
+          <p>
+            I specialize in OSINT, penetration testing, vulnerability assessment, and security
+            monitoring using industry-standard tools. I enjoy building security tools that solve
+            real-world problems.
+          </p>
+          <div class="edu-timeline">
+        <div class="edu-item">
+          <span class="edu-year">2025–2027</span>
+          <div class="edu-info"><h4>M.Tech — Cyber Security</h4><p>Indus University</p></div>
+        </div>
+        <div class="edu-item">
+          <span class="edu-year">Dec 2025</span>
+          <div class="edu-info"><h4>Cybersecurity Internship</h4><p>Shadow-Fox &nbsp;&middot;&nbsp; 1 Month</p></div>
+        </div>
+        <div class="edu-item">
+          <span class="edu-year">2020–2024</span>
+          <div class="edu-info"><h4>B.Tech — Information Technology</h4><p>Indus University</p></div>
+        </div>
+        <div class="edu-item">
+          <span class="edu-year">Jan-2024 to Jun-2024</span>
+          <div class="edu-info"><h4>Internship — MERN Stack</h4><p>Softedge InfoTech</p></div>
+        </div>
+      </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SKILLS SECTION
+    ═══════════════════════════════════════ -->
+    <section id="skills">
+      <div class="section-header fade-up">
+        <div class="section-tag">02 // Skills</div>
+        <h2 class="section-title">Arsenal &amp; <span>Tools</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card fade-up">
+          <div class="skill-cat">Offensive Security</div>
+          <div class="skill-tags">
+            <span class="tag">Kali Linux</span>
+            <span class="tag">Burp Suite</span>
+            <span class="tag">Metasploit</span>
+            <span class="tag">John the Ripper</span>
+            <span class="tag">Zphisher</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up" style="transition-delay:0.1s">
+          <div class="skill-cat">Network &amp; Recon</div>
+          <div class="skill-tags">
+            <span class="tag">Nmap</span>
+            <span class="tag">Wireshark</span>
+            <span class="tag">OSINT</span>
+            <span class="tag">Dorking</span>
+            <span class="tag">ExifTool</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up" style="transition-delay:0.2s">
+          <div class="skill-cat">SOC &amp; Monitoring</div>
+          <div class="skill-tags">
+            <span class="tag">Splunk</span>
+            <span class="tag">Wazuh</span>
+            <span class="tag">SIEM</span>
+            <span class="tag">Log Analysis</span>
+            <span class="tag">IDS/IPS</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up" style="transition-delay:0.3s">
+          <div class="skill-cat">Development</div>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">React.js</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">MERN Stack</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up" style="transition-delay:0.4s">
+          <div class="skill-cat">Specializations</div>
+          <div class="skill-tags">
+            <span class="tag">Pen Testing</span>
+            <span class="tag">VAPT</span>
+            <span class="tag">CTF</span>
+            <span class="tag">Threat Intel</span>
+            <span class="tag">Incident Response</span>
+          </div>
+        </div>
+
+        <div class="skill-card fade-up" style="transition-delay:0.5s">
+          <div class="skill-cat">Soft Skills</div>
+          <div class="skill-tags">
+            <span class="tag">Report Writing</span>
+            <span class="tag">Security Research</span>
+            <span class="tag">Team Collaboration</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PROJECTS SECTION
+    ═══════════════════════════════════════ -->
+    <section id="projects">
+      <div class="section-header fade-up">
+        <div class="section-tag">03 // Projects</div>
+        <h2 class="section-title">Featured <span>Work</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 01 -->
+        <div class="project-card fade-up">
+          <div class="project-num">01</div>
+          <div class="project-tag">OSINT Tool</div>
+          <h3 class="project-title">PhantomEye</h3>
+          <p class="project-desc">
+            A comprehensive OSINT framework with multiple recon modules for gathering intelligence
+            on targets. Built for ethical security research and penetration testing engagements.
+          </p>
+          <div class="project-modules">
+            <h5>// Modules</h5>
+            <div class="module-list">
+              <span class="module">Username Lookup</span>
+              <span class="module">Domain Recon</span>
+              <span class="module">IP Analysis</span>
+              <span class="module">EXIF Tool</span>
+              <span class="module">Email OSINT</span>
+              <span class="module">Metadata Extract</span>
+              <span class="module">Google Dorking</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mihirrathod07" target="_blank" class="proj-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 02 -->
+        <div class="project-card fade-up" style="transition-delay:0.15s">
+          <div class="project-num">02</div>
+          <div class="project-tag">Security Tool</div>
+          <h3 class="project-title">Password Strengthener Tool</h3>
+          <p class="project-desc">
+            A web-based application that helps users create strong, secure passwords by performing
+            real-time strength analysis and providing actionable feedback to improve password hygiene.
+          </p>
+          <div class="project-modules">
+            <h5>// Features</h5>
+            <div class="module-list">
+              <span class="module">Strength Analyzer</span>
+              <span class="module">Real-time Feedback</span>
+              <span class="module">Entropy Check</span>
+              <span class="module">Breach Detection</span>
+              <span class="module">Streamlit UI</span>
+              <span class="module">Python Backend</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://passwordcheckergit.streamlit.app/" target="_blank" class="proj-link">Live Demo</a>
+            <a href="https://github.com/Mihirrathod07" target="_blank" class="proj-link">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 03 - Full Width -->
+        <div class="project-card wide fade-up" style="transition-delay:0.3s">
+          <div class="project-num">03</div>
+          <div class="project-tag">Internship Project &middot; Full Stack</div>
+          <h3 class="project-title">Proginter — Domain Service Platform</h3>
+          <p class="project-desc">
+            A full-stack domain registration and management platform built during internship at
+            Softedge InfoTech. Users can search, register, and manage domain names through a modern
+            web interface powered by a robust REST API backend handling domain availability checks
+            and registration workflows.
+          </p>
+          <div class="project-modules">
+            <h5>// Tech Stack</h5>
+            <div class="module-list">
+              <span class="module">MongoDB</span>
+              <span class="module">Express.js</span>
+              <span class="module">React.js</span>
+              <span class="module">Node.js</span>
+              <span class="module">Next.js</span>
+              <span class="module">REST API</span>
+              <span class="module">Domain Search</span>
+              <span class="module">User Auth</span>
+              <span class="module">Dashboard UI</span>
+            </div>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Mihirrathod07" target="_blank" class="proj-link">GitHub</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CERTIFICATIONS SECTION
+    ═══════════════════════════════════════ -->
+    <section id="certifications">
+      <div class="section-header fade-up">
+        <div class="section-tag">04 // Certifications</div>
+        <h2 class="section-title">Credentials &amp; <span>Certs</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+
+      <a href="certificates/cisco-cybersecurity.pdf" target="_blank">
+  <div class="cert-card fade-up">
+    <div class="cert-icon">[&#10003;]</div>
+    <div class="cert-info">
+      <h4>Introduction to Cybersecurity</h4>
+      <p>Cisco Networking Academy</p>
+    </div>
+  </div>
+</a>
+
+        <a href="certificates/Deloitte.pdf" target="_blank">
+        <div class="cert-card fade-up" style="transition-delay:0.2s">
+          <div class="cert-icon">[&#10003;]</div>
+          <div class="cert-info">
+            <h4>Cybersecurity Job Simulation</h4>
+            <p>Deloitte Australia — Forage</p>
+          </div>
+        </div>
+        </a>
+
+        <a href="certificates/certified_certificate.pdf" target="_blank">
+        <div class="cert-card fade-up" style="transition-delay:0.3s">
+          <div class="cert-icon">[&#10003;]</div>
+          <div class="cert-info">
+            <h4>Certified Cybersecurity Educator Professional (CCEP)</h4>
+            <p>Redteamleaders</p>
+          </div>
+        </div>
+        </a>
+
+         <a href="certificates/Mihir Rathod_Shadowfox_complate.pdf" target="_blank">
+        <div class="cert-card fade-up" style="transition-delay:0.2s">
+          <div class="cert-icon">[&#10003;]</div>
+          <div class="cert-info">
+            <h4>Cybersecurity Internship Certificate</h4>
+            <p>Shadhowfox - Dec 2025</p>
+          </div>
+        </div>
+        </a>
+      </div>
+    </section>
+
+    
+
+    <!-- ═══════════════════════════════════════
+         CONTACT SECTION
+    ═══════════════════════════════════════ -->
+    <section id="contact">
+      <div class="section-header fade-up">
+        <div class="section-tag">05 // Contact</div>
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-wrap">
+
+        <div class="contact-info fade-up">
+          <h3>// Let's Connect</h3>
+          <p>Open to internships, collaborations, CTF teams, and cybersecurity opportunities. Feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:mihir8716@gmail.com" class="c-link">
+              <span class="c-link-icon">&#9993;</span>&nbsp; mihir8716@gmail.com
+            </a>
+            <a href="https://github.com/Mihirrathod07" target="_blank" class="c-link">
+              <span class="c-link-icon">&#9672;</span>&nbsp; github.com/Mihirrathod07
+            </a>
+            <a href="tel:+919712212242" class="c-link">
+              <span class="c-link-icon">&#9743;</span>&nbsp; +91 97122 12242
+            </a>
+          </div>
+        </div>
+
+        <div class="terminal-box fade-up" style="transition-delay:0.2s">
+          <div class="terminal-bar">
+            <div class="t-dot t-r"></div>
+            <div class="t-dot t-y"></div>
+            <div class="t-dot t-g"></div>
+            <span class="t-title">ping MR.network</span>
+          </div>
+          <div class="terminal-body">
+            <div class="t-line"><span class="t-prompt">$</span><span class="t-cmd">&nbsp;nmap -sV mihir.rathod</span></div>
+            <div class="t-out" style="color:var(--text-dim)">Starting Nmap scan...</div>
+            <div class="t-out">PORT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STATE&nbsp;&nbsp;SERVICE</div>
+            <div class="t-out">22/tcp&nbsp;&nbsp;&nbsp;open&nbsp;&nbsp;&nbsp;ssh</div>
+            <div class="t-out">80/tcp&nbsp;&nbsp;&nbsp;open&nbsp;&nbsp;&nbsp;portfolio</div>
+            <div class="t-out">443/tcp&nbsp;&nbsp;open&nbsp;&nbsp;&nbsp;secure-comms</div>
+            <div class="t-out" style="color:var(--text-dim)">Nmap done — Host is <span style="color:var(--green)">UP</span></div>
+            <div class="t-line" style="margin-top:0.5rem">
+              <span class="t-prompt">$</span><span class="t-cmd">&nbsp;echo "Ready to collaborate!"</span>
+            </div>
+            <div class="t-out" style="color:var(--green)">Ready to collaborate!</div>
+            <div class="t-line"><span class="t-prompt">$</span><span class="typed-cursor">_</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer>
+    <div class="footer-text">&#169; 2026 <span>Mihir Rathod</span> — All rights reserved</div>
+    <div class="footer-text">Built with <span>passion</span> &amp; &#9749;</div>
+    <div class="footer-text">[ <span>SYSTEM SECURE</span> ]</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -192,3 +192,29 @@ document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
   runScript();
 }());
+
+/* ───────────────────────────────────────
+   6. PROTECTION — Right Click & Shortcuts
+─────────────────────────────────────── */
+
+// Disable right click
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+  return false;
+});
+
+// Disable keyboard shortcuts
+document.addEventListener('keydown', function(e) {
+  // Ctrl+U — View Source
+  if (e.ctrlKey && e.key === 'u') { e.preventDefault(); return false; }
+  // Ctrl+S — Save page
+  if (e.ctrlKey && e.key === 's') { e.preventDefault(); return false; }
+  // Ctrl+Shift+I — DevTools
+  if (e.ctrlKey && e.shiftKey && e.key === 'I') { e.preventDefault(); return false; }
+  // Ctrl+Shift+J — Console
+  if (e.ctrlKey && e.shiftKey && e.key === 'J') { e.preventDefault(); return false; }
+  // Ctrl+Shift+C — Inspect
+  if (e.ctrlKey && e.shiftKey && e.key === 'C') { e.preventDefault(); return false; }
+  // F12 — DevTools
+  if (e.key === 'F12') { e.preventDefault(); return false; }
+});

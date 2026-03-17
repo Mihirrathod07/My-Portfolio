@@ -600,7 +600,7 @@ section {
 .project-card:hover::after { opacity: 1; }
 
 /* Full-width card (Project 03) */
-.project-card.wide { grid-column: 1 / -1; }
+/* .project-card.wide { grid-column: 1 / -1; } */
 
 .project-num {
   font-family: 'Orbitron', monospace;
